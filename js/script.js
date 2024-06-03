@@ -1,8 +1,8 @@
-let menuContainer = document.querySelector('.menu-container');
-let menu = document.querySelector('.menu');
+let menuContainer = document.querySelector('.a-right');
+let menu = document.querySelector('.header-right');
 menuContainer.addEventListener('click', function() {
   if (menu.style.display === 'none') {
-    menu.style.display = 'flex';
+    menu.style.display = 'block';
   } else {
     menu.style.display = 'none';
   }
@@ -124,3 +124,5 @@ form.addEventListener('submit', function(event) {
     xhr.send(encodeURI('name=' + name + '&email=' + email + '&message=' + message));
   }
 });
+
+
